@@ -74,7 +74,7 @@ impl Backstory for Orc {
 
 impl Characteristics for Orc {
     const AGE_RANGE: AgeRange = AgeRange(6..=50);
-    const SIZE: Size = Size::Small;
+    const SIZE: Size = Size::Medium;
 
     fn get_base_speeds(&self) -> Vec<Speed> {
         vec![Speed::Walking(30)]
@@ -247,6 +247,14 @@ mod tests {
         let characteristics = orc.gen_characteristics(&mut rng);
         let name = Orc::gen_name(&mut rng, &characteristics);
         insta::assert_yaml_snapshot!(name);
+    }
+
+    #[test]
+    fn test_snapshot_proficiencies() {
+        let orc = Orc {
+            origin: String::new(),
+        };
+        insta::assert_yaml_snapshot!(orc.proficiencies());
     }
 
     #[test]
