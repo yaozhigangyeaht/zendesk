@@ -11,6 +11,7 @@ resolver = "2"
 actix-http = "2"
 actix-web = "3"
 alignment = { path = "../alignment" }
+characteristics = { path = "../characteristics" }
 citation = { path = "../citation" }
 deities = { path = "../deities" }
 dice_roller = { path = "../dice_roller" }
