@@ -10,14 +10,11 @@ resolver = "2"
 [dependencies]
 alignment = { path = "../alignment" }
 attack = { path = "../attack" }
+background = { path = "../background" }
 backstory = { path = "../backstory" }
 characteristics = { path = "../characteristics" }
-citation = { path = "../citation" }
-deities = { path = "../deities" }
-dice_roller = { path = "../dice_roller" }
 features = { path = "../features" }
 gear = { path = "../gear" }
-itertools = "0.10"
 languages = { path = "../languages" }
 personality = { path = "../personality" }
 race = { path = "../race" }
@@ -27,7 +24,6 @@ serde = { version = "1", features = ["derive"] }
 stats = { path = "../stats" }
 strum = { version = "0.20", features = ["derive"] }
 trinkets = { path = "../trinkets" }
-typetag = "0.1"
 
 [dev-dependencies]
 insta = "1"
