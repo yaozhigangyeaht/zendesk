@@ -1,6 +1,6 @@
 ---
 source: src/character/race/tiefling.rs
-expression: "format!(\"{}\", tiefling)"
+expression: tiefling
 
 ---
-Tiefling
+Asmodeus Tiefling
