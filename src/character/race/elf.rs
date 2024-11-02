@@ -12,11 +12,8 @@ use crate::{
 
 #[derive(Display, EnumIter)]
 enum ElfSubrace {
-    #[strum(serialize = "Drow")]
     Dark,
-    #[strum(serialize = "High Elf")]
     High,
-    #[strum(serialize = "Wood Elf")]
     Wood,
 }
 
@@ -77,6 +74,6 @@ impl Race for Elf {
 
 impl fmt::Display for Elf {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self.subrace)
+        write!(f, "{} Elf", self.subrace)
     }
 }
