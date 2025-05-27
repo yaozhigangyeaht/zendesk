@@ -10,7 +10,7 @@ edition = "2021"
 async-std = { version = "1", features = ["attributes"] }
 character = { path = "./crates/character" }
 rand = "0.8"
-rand_pcg = "0.3"
+rand_pcg = "0.9"
 sentry = "0.31"
 tera = "1"
 tide = "0.16"
