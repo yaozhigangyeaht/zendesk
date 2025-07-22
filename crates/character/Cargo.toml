@@ -19,7 +19,7 @@ gear = { path = "../gear" }
 languages = { path = "../languages" }
 personality = { path = "../personality" }
 race = { path = "../race" }
-rand = "0.8"
+rand = "0.9"
 rand_pcg = "0.3"
 serde = { version = "1", features = ["derive"] }
 stats = { path = "../stats" }
